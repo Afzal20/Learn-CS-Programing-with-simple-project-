@@ -68,7 +68,7 @@ in this project user can add, remuve, see movie details and also See movie list.
 
 in this function we have wrightIntoFile() function which is private function to write into file, in this function i can write movie details into file.
 
-##### So, I need to impliment this private function
+### So, I need to impliment this private function
 #
 ```csharp
     private void wrightIntoFile()
