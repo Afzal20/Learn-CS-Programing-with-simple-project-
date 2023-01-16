@@ -5,6 +5,9 @@ It a Vary simple project to learn C sharp programing. I thing it's the best way 
 
 ###### At first I can plan for this project how i can make this project
 in this project user can add, remuve, see movie details and also See movie list. Now we have 4 basic function 
+
+$${\color{Red}C-Sharp }$$
+
 ```csharp 
     public void addMovie(string movieName) { }
     public void removeMovie(string name) { } 
@@ -13,7 +16,7 @@ in this project user can add, remuve, see movie details and also See movie list.
 ```
 
 ## At first I Want to impliment Main 
-
+$${\color{Red}C-Sharp }$$
 ```csharp
 using ConsoleApp1;
 
@@ -76,6 +79,7 @@ namespace Program
 ###### Now i need to impliment all function 
 
 ## addMovie( )  funcrion :
+$${\color{Red}C-Sharp }$$
 
 ```csharp
     public void addMovie(string movieName)
@@ -127,6 +131,7 @@ in this function we have wrightIntoFile() function which is private function to 
 
 ##### So, I need to impliment this private function
 #
+$${\color{Red}C-Sharp }$$
 ```csharp
     private void wrightIntoFile()
         {
@@ -217,7 +222,7 @@ in this function we have wrightIntoFile() function which is private function to 
 ```
 
 ## In Next step i need to impliment showMovie( )  funcrion :
-
+$${\color{Red}C-Sharp }$$
 ```csharp
 public void showMovie()
 {
@@ -228,7 +233,7 @@ public void showMovie()
 ```
 
 ### In this function there are a function called readFile( ) which is prinvate function a private function naw we need to impliment this
-
+$${\color{Red}C-Sharp }$$
 ```csharp
 private void readFile(string file)
         {
@@ -278,7 +283,7 @@ Console.Write(ExtentionOFVariable[lineNumber] + " " + line + "\n");
 
 
 so concept is clear if explain using ```python``` that is 
-
+$${\color{Red} Python }$$
 ```python
 name = "Name"
 Ratings = "Ratings"
@@ -324,6 +329,7 @@ for i in range(len(v)):
 ```
 
 ##  removeMovie( )  funcrion : in this function just delete that file
+$${\color{Red}C-Sharp }$$
 ```csharp
 public void removeMovie(string name)
 {
@@ -346,6 +352,7 @@ public void removeMovie(string name)
 
 Now, It's time to test this program 🥰 ! But here is a problem that is I need to give a lot of input  😌  many times because I will test my program, and I don't know where is any problem. I don't want to do this many times. So I will automat this using python 🤪
 
+$${\color{Red} Python }$$
 
 ```python
 import pyautogui
@@ -387,6 +394,9 @@ for i in details:
 
 if you want to do this like me you need to install python on your computer and then install only one module that is pyautogui
 * ### to install install  pyautogui open your terminal and write 
+
+``` terminal or cmd ```
+
 ```sh
 pip install PyAutoGUI
 ```
