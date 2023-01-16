@@ -271,6 +271,58 @@ private void readFile(string file)
         }
 ```
 
+hear is some complicate things that is ```string[] ExtentionOFVariable```. and 
+```code
+Console.Write(ExtentionOFVariable[lineNumber] + " " + line + "\n");
+```
+
+
+so concept is clear if explain using ```python``` that is 
+
+```python
+name = "Name"
+Ratings = "Ratings"
+releseYear = "releseYear"
+Language = "Language"
+Herro = "Herro"
+villan = "villan"
+Herroin = "Herroin"
+linksToDowenload = "linksToDowenload"
+AavailableOnYoutub = "AavailableOnYoutub"
+movietype = "movietype"
+count = "country"
+
+
+E = [ "Movie Name is : ",
+    "Ratings : ",
+    "releseYear : ", 
+    "Language : ", 
+    "Herro : ", 
+    "villan : ", 
+    "Herroin : ", 
+    "linksToDowenload : ", 
+    "AavailableOnYoutub : ", 
+    "movietype : ", 
+    "country : "
+]
+
+v = [name, 
+    Ratings,
+    releseYear,
+    Language,
+    Herro,
+    villan,
+    Herroin,
+    linksToDowenload,
+    AavailableOnYoutub,
+    movietype,
+    count,
+]
+
+for i in range(len(v)):
+    print(E[i], v[i])
+```
+
 ##  removeMovie( )  funcrion : in this function just delete that file
 ```csharp
 public void removeMovie(string name)
