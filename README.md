@@ -278,3 +278,42 @@ public void removeMovie(string name)
     }
 }
 ```
+
+Now, It's time to test this program 🥰 ! But here is a problem that is I need to give a lot of input  😌  many times because I will test my program, and I don't know where is any problem. I don't want to do this many times. So I will automat this using python 🤪
+
+
+```python
+import pyautogui
+import time
+
+name = "KGF2"
+ratings = "5 Stars"
+releseYear = "2022"
+Language = "Hindi"
+Herro = "Yash"
+Herroin = "Srinidhi Shetty"
+villan = "Sanjay Dutt"
+linksToDowenload = "https://www.youtube.com/watch?v=lbknedbzPG0" 
+AavailableOnYoutub = "Yes"
+movietype = "Theatrical"
+country = "INDIA" 
+
+details = [name, 
+        ratings, 
+        releseYear, 
+        Language, 
+        Herro, 
+        Herroin, 
+        villan, 
+        linksToDowenload,
+        AavailableOnYoutub,
+        movietype,
+        country
+        ]
+
+time.sleep(3)
+
+for i in details:
+    pyautogui.typewrite(i)
+    pyautogui.press("enter")
+```
