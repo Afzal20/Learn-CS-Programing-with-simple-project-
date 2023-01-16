@@ -12,9 +12,70 @@ in this project user can add, remuve, see movie details and also See movie list.
     public void showMovie() { } 
 ```
 
+## At first I Want to impliment Main 
+
+```csharp
+using ConsoleApp1;
+
+namespace Program
+{
+    class Program
+    {   
+        static void Main(string[] args)
+        {
+            {
+                Console.Title = "MOVIE LIST";
+                MovieFunctions movie = new MovieFunctions();
+                while (true)
+                {
+                    Console.WriteLine("1. Add A nwe movie\n2. Find your movie");
+                    Console.WriteLine("3. Remove movie\n4. Show movie list ");
+                    Console.WriteLine("0. Exit\n");
+
+                    Console.WriteLine("Enter Your Choice ... ");
+                    String Cho = Console.ReadLine();
+                    try
+                    {
+                        int Ch = Convert.ToInt32(Cho);
+                        if (Ch == 0) break;
+                        if (Ch == 1)
+                        {
+                            Console.WriteLine("Enter movie Name .... ");
+                            String Name = Console.ReadLine();
+                            movie.addMovie(Name);
+                            Console.WriteLine("Movie is added ");
+                        }
+                        if (Ch == 2)
+                        {
+                            movie.showMovie();
+                        }
+                        if (Ch == 3)
+                        {
+                            Console.WriteLine("Enter move name .... ");
+                            string name = Console.ReadLine();
+                            movie.removeMovie(name);
+                        }
+                        if (Ch == 4)
+                        {
+                            movie.showMovieList();
+                        }
+                    }
+
+                    catch
+                    {
+                        if (Cho.ToLower() == "Clear".ToLower()) Console.Clear();
+                        else if (Cho.ToLower() == "Exit".ToLower()) break;
+                    }
+                }
+            }
+        }
+    }
+}
+```
+
 ###### Now i need to impliment all function 
 
-   ## addMovie( )  funcrion :
+## addMovie( )  funcrion :
 
 ```csharp
     public void addMovie(string movieName)
@@ -208,54 +269,6 @@ private void readFile(string file)
                 Console.WriteLine();
             }
         }
-```
-
-## addMovie( )  funcrion :
-
-``` csharp
-public void addMovie(string movieName)
-{
-    this.name = movieName;
-    
-    Console.ForegroundColor = ConsoleColor.White;
-    Console.WriteLine("Enter Ratings ... ");
-    this.ratings = Console.ReadLine();
-
-    Console.WriteLine("ReleseYear ... ");
-    this.releseYear = Console.ReadLine();
-
-    Console.WriteLine("Which Language ... ");
-    this.Language = Console.ReadLine();
-
-    Console.WriteLine("Herro Name ?... ");
-    this.Herro = Console.ReadLine();
-
-    Console.WriteLine("Herroin Name... ");
-    this.Herroin = Console.ReadLine();
-
-    Console.WriteLine("who was villan ... ");
-    this.villan = Console.ReadLine();
-
-    Console.WriteLine("Do you have any links To Dowenload or see this movie... ");
-    this.linksToDowenload = Console.ReadLine();
-
-    Console.WriteLine("Is it Aavailable On Youtub ? ... ");
-    this.AavailableOnYoutub = Console.ReadLine();
-
-    Console.WriteLine("Enter movietype ... ");
-    this.movietype = Console.ReadLine();
-
-    Console.WriteLine("Country ... ");
-    this.country = Console.ReadLine();
-
-    wrightIntoFile();
-    if (File.Exists(FilePath + "/" +movieName + ".txt"))
-    {
-        Console.ForegroundColor = ConsoleColor.Green;
-        Console.WriteLine(FilePath + "/" + movieName + ".txt");
-        Console.ForegroundColor = ConsoleColor.White;
-    }
-}
 ```
 
 ##  removeMovie( )  funcrion : in this function just delete that file
