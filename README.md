@@ -298,6 +298,8 @@ AavailableOnYoutub = "Yes"
 movietype = "Theatrical"
 country = "INDIA" 
 
+sleep_time = 3
+
 details = [name, 
         ratings, 
         releseYear, 
@@ -311,9 +313,17 @@ details = [name,
         country
         ]
 
-time.sleep(3)
+time.sleep(sleep_time)
 
 for i in details:
     pyautogui.typewrite(i)
     pyautogui.press("enter")
 ```
+
+if you want to do this like me you need to install python on your computer and then install only one module that is pyautogui
+* ### to install install  pyautogui open your terminal and write 
+```sh
+pip install PyAutoGUI
+```
+
+writing will start after 3 seconds where your computer coursor, So you need to run this program after runing your c# project. If you want to change starting time you change only sleep_time value.
